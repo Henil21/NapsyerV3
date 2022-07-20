@@ -5,7 +5,6 @@ import styled from "styled-components";
 import { Button } from "@material-ui/core";
 import{auth,provider} from "../firebase";
 
-
 function Login(){
     const sigIn=()=>{
         auth.signInWithPopup(provider).catch(alert);
@@ -16,9 +15,16 @@ function Login(){
                 <title>Login</title>
             </Head>
             <LoginContainer>
+            {/* <h2>Dont live a little , live  a napster</h2> */}
+
+            <Nap
+                src="/NAPSTER.jpg"
+                />
                 <Logo
                 src="https://cdn.pixabay.com/photo/2016/11/30/18/14/chat-1873536_1280.png"
+                // src="/NAPSTER.ico"
                 />
+            
                 <Button onClick={sigIn} variant="outlined" color="secondary">sign in with google</Button>
             </LoginContainer>
         </Container>
@@ -39,6 +45,7 @@ background: linear-gradient(to right, #E684AE, #79CBCA, #77A1D3); /* W3C, IE 10+
 ;
 `;
 
+
 const LoginContainer=styled.div`
 padding: 100px;
 display: flex;
@@ -49,7 +56,11 @@ border-radius: 20px;
 box-shadow: 0px 4px 14px -3px rgba(0.7,0,0.7,7);
 `;
 
+const Nap=styled.img`
+
+`;
+
 const Logo=styled.img`
- height: 200px;
- width: 200px;
+ height: 160px;
+ width: 150px;
 `;

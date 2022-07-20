@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div >
       <Head>
-        <title>𝓙𝓪𝓫𝓫𝓮𝓻</title>s
+        <title>𝓙𝓪𝓫𝓫𝓮𝓻</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Sidebar/>

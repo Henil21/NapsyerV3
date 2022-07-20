@@ -6,6 +6,8 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollection } from "react-firebase-hooks/firestore";
 import {useRouter} from "next/router";
 
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+
 function Chat({id,users}){
     const router =useRouter();
     const[user]=useAuthState(auth)
@@ -47,7 +49,7 @@ cursor: pointer;
 padding: 5px;
 word-break: break-word;
 /* word-break: break-all; */
-width:80%;
+/* width:80%; */
  :hover{
     background: #8e9eab;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
