@@ -20,7 +20,7 @@ function Chat({id,users}){
         
         );
         // ()=>
-    const enterChat= ()=>{
+        const enterChat= ()=>{
         router.push(`/chat/${id}`)
     }
     const recipient= recipientSnapshot?.docs?.[0]?.data();
@@ -48,8 +48,8 @@ align-items: center;
 cursor: pointer;
 padding: 5px;
 word-break: break-word;
-/* word-break: break-all; */
-/* width:80%; */
+word-break: break-all; 
+width:80%; 
  :hover{
     background: #8e9eab;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */

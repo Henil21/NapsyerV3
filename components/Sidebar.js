@@ -24,7 +24,7 @@ function Sidebar(){
     
     if(!input) return null;
 
-    if(EmailValidator.validate(input) && !chatexist(input)  && input!== user.email){
+    if(EmailValidator.validate(input) && !chatexist(input)  && input !== user.email){
     //   if it didnt exsist than add it
         db.collection("chat").add({
             users: [user.email,input],
@@ -41,7 +41,8 @@ function Sidebar(){
              (chat)=>
              chat.data().users.find((user) => user ===recipientEmail)?.length>0
          );
-     
+         
+
     return(
        <Container>
         <Header>

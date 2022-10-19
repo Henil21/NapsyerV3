@@ -10,8 +10,8 @@ import { useCollection } from "react-firebase-hooks/firestore";
 
 function Chat({chat , messages}) {
     const [user]=useAuthState(auth);
-    // console.log(getRecipientEmail(chat.user));
-    // console.log(users);
+    console.log(getRecipientEmail(chat.user));
+    console.log(user);
     return(
 
             <Container>
